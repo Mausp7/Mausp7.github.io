@@ -6,47 +6,80 @@
     <title>Jane Goodall Tribute Page</title>
     <link rel="stylesheet" href="">
     <style>
+        html {
+            font-size: calc(16+1vw);
+        }
         body {
             width: 80%;
             margin: auto;
             background-color: beige;
-            font-size: 10px;
         }
         header {
-            background-color: lightgreen;
+            background: linear-gradient(-60deg, rgb(90, 190, 90), rgb(220, 220, 50));
+            color: rgb(20, 80, 10);
             text-align: center;
             padding: 1%;
+            margin-top: 10px;
+            border-radius: 40px;
         }
         #title {
             font-size: 4rem;
+            margin: 20px 0px;
+            text-shadow:  3px 3px 3px rgba(0, 0, 0, 0.6);
         }
         header h2 {
             font-size: 2rem;
+            margin: 20px 20px;
+            text-shadow:  2px 2px 2px rgba(0, 0, 0, 0.5);
         }
         #img-div{
             display: flex;
             flex-direction: column;
         }
         img{
-            max-width: 220px;
+            max-width: 600px;
+            min-width: 150px;
             width: 30%;
             height: auto;
             justify-self: center;
             align-self: center;
+            margin: 30px 30px 10px 30px;
         }
         #img-caption {
             font-size: 1.5rem;
             align-self: center;
+            margin: 10px 0px 30px 0px;
         }
         #tribute-info {
-            font-size: 1.3rem;
+            width: 90%;
+            font-size: 1.2rem;
             padding: 10px 5%;
+            border-style: groove;
+            border-color: rgb(90, 190, 90);
         }
         #tribute-info h2 {
             text-align: center;
         }
+        #tribute-info ul {
+            padding: 0px;
+        }
+        #tribute-info li:nth-child(2n+1) {
+            background-color: rgb(200, 255, 200);
+        }
+        #tribute-info li:nth-child(2n) {
+            background-color: rgb(250, 250, 160);
+        }
+        #tribute-info ul li {
+            list-style-position: inside;
+            margin: 15px 0px;
+            padding: 20px;
+            border-radius: 10px;
+            text-shadow:  1px 1px 2px rgba(0, 0, 0, 0.2);
+            box-shadow:  0px 0px 10px rgba(0, 0, 0, 0.4);
+        }
         #tribute-info p {
             text-align: center;
+            font-size: 1rem;
         }
 
     </style>
@@ -58,7 +91,7 @@
     </header>
     <main>
         <div id="img-div">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Jane-goodall.jpg/220px-Jane-goodall.jpg" id="img-div" alt="JAne Goodall">
+            <img src="pic/goddall.jpg" id="img-div" alt="Jane Goodall">
             <h3 id="img-caption">Goodall in Tanzania in 2018</h3>
         </div>
         <div id="tribute-info">

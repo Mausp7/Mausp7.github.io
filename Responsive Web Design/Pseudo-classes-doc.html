@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-classes documentation</title>
+    <style>
+        @media screen and (min-width: 801px) {
+            #navbar {
+                position: fixed;
+                top: 0px;
+                left: 0px;
+                width: 300px;
+                height: 100%;
+                background-color: rgb(180, 180, 180);
+            }
+            #main-doc {
+                margin: 10px 10px 10px 310px;
+            }
+            
+        }
+
+    </style>
+</head>
+<body>
+    <nav id="navbar">
+        <h1>CSS Pseudo-classes
+        </h1>
+        <ul>
+            <li>
+                <a href="#what_is_a_pseudo-class" class="nav-link">What is Pseudo-class</a>
+            </li>
+            <li>
+                <a href="#anchor_pseudo-classes" class="nav-link">Anchor Pseudo-classes</a>
+            </li>
+            <li>
+                <a href="#the_first_child_pseudo_class" class="nav-link">The :first-child Pseudo-class</a>
+            </li>
+            <li>
+                <a href="#the_last_child_pseudo_class" class="nav-link">The :last-child Pseudo-class</a>
+            </li>
+            <li>
+                <a href="#the_nth-child_pseudo-class" class="nav-link">The :nth-child Pseudo-class</a>
+            </li>
+            <li>
+                <a href="#the_lang_pseudo-class" class="nav-link">The :lang Pseudo-class</a>
+            </li>
+            <li>
+                <a href="#pseudo-classes_and_css_classes" class="nav-link">Pseudo-classes and CSS Classes</a>
+            </li>
+        </ul>
+    </nav>
+    <main id="main-doc">
+        <section id="what_is_a_pseudo-class" class="main-section">
+            <h2>What is Pseudo-class</h2>
+            <p>A CSS pseudo-class selector matches components based on an additional condition and not necessarily defined by the document tree.
+            </p>
+            <p>The CSS pseudo-classes allow you to style the dynamic states of an element such as hover, active and focus state, as well as elements that are existing in the document tree but can't be targeted via the use of other selectors without adding any IDs or classes to them, for example, targeting the first or last child elements.
+            </p>
+            <p>The CSS pseudo-classes allow you to style the dynamic states of an element such as hover, active and focus state, as well as elements that are existing in the document tree but can't be targeted via the use of other selectors without adding any IDs or classes to them, for example, targeting the first or last child elements.
+            </p>
+             <p>A pseudo-class starts with a colon (:). Its syntax can be given with:
+            </p>
+            <code>selector:pseudo-class { property: value; }
+            </code>
+            <p>The following section describes the most commonly used pseudo-classes.
+            </p>
+        </section>
+        <section id="anchor_pseudo-classes" class="main-section">
+            <h2>Anchor Pseudo-classes</h2>
+            <p>Using anchor pseudo-classes links can be displayed in different ways:
+            </p>
+            <p>These pseudo-classes let you style unvisited links differently from visited ones. The most common styling technique is to remove underlines from visited links.
+            </p>
+            <code>a:link {<br>
+                color: blue;<br>
+                }<br>
+                a:visited {<br>
+                text-decoration: none;<br>
+                }<br>
+            </code>
+            <p>Some anchor pseudo-classes are dynamic — they're applied as a result of user interaction with the document like on hover, or on focus etc.
+            </p>
+            <code>a:hover {<br>
+                color: red;<br>
+                }<br>
+                a:active {<br>
+                color: gray;<br>
+                }<br>
+                a:focus {<br>
+                color: yellow;<br>
+                }<br>
+            </code>
+            <p>These pseudo-classes change how the links are rendered in response to user actions.
+            </p>
+            <ul>
+                <li>
+                    <code>:hover</code> applies when a user places cursor over the element, but does not select it.
+                </li>
+                <li>
+                    <code>:active</code> applies when the element is activated or clicked.
+                </li>
+                <li>
+                    <code>:focus</code> applies when the element has keyboard focus.
+                </li>
+                </ul>
+            <p>To make these pseudo-classes work perfectly, you must define them in the exact order:
+            </p>
+            <ul>
+                <li>
+                    :link
+                </li>
+                <li>
+                    :visited                    
+                </li>
+                <li>
+                    :hover                    
+                </li>
+                <li>
+                    :active
+                </li>
+                <li>
+                    :focus                    
+                </li>
+            </ul>
+        </section>
+        <section id="the_first_child_pseudo_class" class="main-section">
+            <h2>The :first-child Pseudo-class</h2>
+            <p>The :first-child pseudo-class matches an element that is the first child element of some other element. The selector ol li:first-child in the example below select the first list item of an ordered list and removes the top border form it.
+            </p>
+            <code>ol li:first-child {<br>
+                border-top: none;<br>
+                }<br>
+            </code>
+        </section>
+        <section id="the_last_child_pseudo_class" class="main-section">
+            <h2>The :last-child Pseudo-class</h2>
+            <p>The :last-child pseudo-class matches an element that is the last child element of some other element. The selector ul li:last-child in the example below select the last list item from an unordered list and removes the right border from it.
+            </p>
+            <code>
+                ul li:last-child {<br>
+                    border-right: none;<br>
+                }<br>
+            </code>    
+        </section>
+        <section id="the_nth-child_pseudo-class" class="main-section">
+            <h2>The :nth-child Pseudo-class</h2>
+            <p>The CSS3 introduces a new :nth-child pseudo-class that allows you to target one or more specific children of a given parent element. The basic syntax of this selector can be given with :nth-child(N), where N is an argument, which can be a number, a keyword (even or odd), or an expression of the form xn+y where x and y are integers (e.g. 1n, 2n, 2n+1, …).
+            </p>
+            <code>
+                table tr:nth-child(2n) td {<br>
+                    background: #eee;<br>
+                }<br>
+            </code>    
+            <p>The CSS :nth-child(N) selector is very useful in the situations where you have to select the elements that appears inside the document tree in a specific interval or pattern like at even or odd places, etc.
+            </p>
+        </section>
+        <section id="the_lang_pseudo-class" class="main-section">
+            <h2>The :lang Pseudo-class</h2>
+            <p>The language pseudo-class :lang allows constructing selectors based on the language setting for specific tags. The :lang pseudo-class in the example below defines the quotation marks for <q> elements that are explicitly given a language value of no.
+            </p>
+            <code>q:lang(no) {<br>
+                quotes: "~" "~";<br>
+                }<br>
+            </code>                    
+            <p>Internet Explorer up to version 7 does not support the :lang pseudo-class. IE8 supports only if a <!DOCTYPE> is specified.
+            </p>
+        </section>
+        <section id="pseudo-classes_and_css_classes" class="main-section">
+            <h2>Pseudo-classes and CSS Classes</h2>
+            <p>Pseudo-classes can be combined with CSS classes.
+            </p>
+            <p>The link with class="red", in the example below will be displayed in red.
+            </p> 
+            <code>
+                a.red:link {    /* style rule */<br>
+                    color: #ff0000;<br>
+                }<br>
+            </code>   
+        </section>
+
+    </main>
+</body>
+</html>
