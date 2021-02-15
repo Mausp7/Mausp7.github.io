@@ -27,7 +27,7 @@
             #header-img {
                 height: 70px;
                 width: auto;
-                margin: 3px 0px 5px 0px;
+                margin: 5px 0px 10px 0px;
             }
             #nav-bar {
                 display: flex;
@@ -39,6 +39,14 @@
                 text-decoration: none;
                 color: black;
                 font-size: 1.3rem;
+                padding: 15px 30px;
+                border-radius: 5px;
+                transition-property: color, background-color;
+                transition-duration: 0.2s;
+            }
+            #nav-bar a:hover {
+                color: rgb(170, 75, 15);
+                background-color: rgb(255, 255, 120);
             }
             main {
                 width: 80%;
@@ -63,14 +71,21 @@
             }
             .btn {
                 background-color: rgb(255, 255, 60);
+                max-width: 200%;
+                color: rgb(80, 35, 5);
                 text-transform: uppercase;
                 font-size: 1.2rem;
                 font-weight: 500;
-                margin: 10px 20px;
-                padding: 10px 30px 10px 30px;
+                margin: 10px auto 0px auto;
+                padding: 10px 40px 10px 40px;
                 border: none;
-                border-radius: 5px;
+                border-radius: 10px;
                 cursor: pointer;
+                transition-property: background-color;
+                transition-duration: 0.3s;
+            }
+            .btn:hover {
+                background-color: rgb(255, 255, 130);
             }
             #features {
                 margin-top: 50px;
@@ -96,10 +111,236 @@
             #features p {
                 font-size: 1.2rem;
             }
+            iframe{
+                width: 560px;
+                height: 300px;
+            }
+            #pricing {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                margin: 60px 0px;
+            }
+            .card {
+                width: 30%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                padding: 0px 0px 2% 0px;
+                border-style: solid;
+                border-width: 1px;
+                border-color: rgb(80, 35, 5);
+                font-size: 1.2rem;
+                color:rgb(80, 35, 5);
+            }
+            .card h2 {
+                margin: 0px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                background-color: rgb(255, 255, 100);
+                text-align: center;
 
-
+            }
+            .card p {
+                font-size: 1rem;
+                text-align: justify;
+                padding: 0px 20px 0px 20px;
+            }
+            footer {
+                width: 80%;
+                margin: 0px 10% 0px 10%;
+                padding: 10px 0px;
+                font-size: 1rem;
+                color: rgb(80, 35, 5);
+                background-color: rgb(255, 255, 100);
+            }
+            footer ul {
+                display: flex;
+                justify-content: flex-end;
+                list-style: none;
+                margin-bottom: 5px;
+            }
+            footer li {
+                margin: 0px 30px 0px 10px;
+            }
+            footer span {
+                display: flex;
+                justify-content: flex-end;
+                margin: 0px 30px 10px 0px;
+                color: rgb(153, 70, 14);
+            }
 
         }
+        @media screen and (max-width: 699px) {
+            body {
+                width: 100%;
+                margin: 0px;
+                font-size: 62.5%;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+            }
+            header {
+                height: auto;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                background-color: rgb(255, 255, 60);
+                padding: 0px 3%;
+            }
+            #header-img {
+                height: auto;
+                width: 70%;
+                margin: 5px 0px 5px 0px;
+            }
+            #nav-bar {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                text-decoration: none;
+                width: 90%;
+            }
+            #nav-bar a {
+                text-decoration: none;
+                color: black;
+                font-size: 1.2rem;
+                padding: 10px 20px;
+                border-radius: 5px;
+                transition-property: color, background-color;
+                transition-duration: 0.2s;
+            }
+            #nav-bar a:hover {
+                color: rgb(170, 75, 15);
+                background-color: rgb(255, 255, 120);
+            }
+            main {
+                width: 100%;
+                margin: 0px 0% 0px 0%;
+                background-color: rgb(247, 247, 218);
+                text-align: center;
+            }
+            main h1 {
+                margin-top: 0px;
+                padding: 40px 0px 10px 0px;
+                font-size: 1.6rem;
+                color:rgb(80, 35, 5)
+            }
+            #email {
+                width: 60%;
+                max-width: 350px;
+                height: 30px;
+                padding-left: 20px;
+                border-radius: 5px;
+                border-color: rgba(100,100,100,0.5);
+                font-size: 0.9rem;
+            }
+            .btn {
+                background-color: rgb(255, 255, 60);
+                max-width: 200%;
+                color: rgb(80, 35, 5);
+                text-transform: uppercase;
+                font-size: 1.2rem;
+                font-weight: 500;
+                margin: 10px auto 0px auto;
+                padding: 10px 40px 10px 40px;
+                border: none;
+                border-radius: 10px;
+                cursor: pointer;
+                transition-property: background-color;
+                transition-duration: 0.3s;
+            }
+            .btn:hover {
+                background-color: rgb(255, 255, 130);
+            }
+            #features {
+                margin-top: 40px;
+                margin-bottom: 40px;
+                padding: 0px 5%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                color:rgb(80, 35, 5)
+            }
+            .fas {
+                font-size: 40px;
+                margin-top: 10px;
+            }
+            #features section {
+                text-align: justify;
+                width: 100%;
+                margin: 0px 0px 10px 0px;
+            }
+            #features h2 {
+                text-align: center;
+                font-size: 1.3rem;
+            }
+            #features p {
+                font-size: 1rem;
+            }
+            iframe{
+                max-width: 560px;
+                width: 100%;
+                height: 300px;
+            }
+            #pricing {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin: 60px 0px;
+            }
+            .card {
+                width: 85%;
+                display: flex;
+                flex-direction: column;
+                margin: 15px 0px;
+                padding: 0px 0px 5% 0px;
+                border-style: solid;
+                border-width: 2px;
+                border-radius: 5px;
+                border-color: rgb(80, 35, 5);
+                font-size: 1rem;
+                color:rgb(80, 35, 5);
+            }
+            .card h2 {
+                margin: 0px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                background-color: rgb(255, 255, 100);
+                text-align: center;
+            }
+            .card br {
+                display: none;
+            }
+            .card p {
+                font-size: 1rem;
+                text-align: justify;
+                padding: 10px 20px 0px 20px;
+            }
+            footer {
+                width: 100%;
+                margin: 0px 0% 0px 0%;
+                padding: 10px 0px;
+                font-size: 1rem;
+                color: rgb(80, 35, 5);
+                background-color: rgb(255, 255, 100);
+            }
+            footer ul {
+                display: flex;
+                justify-content: center;
+                list-style: none;
+                margin: 10px 0px 5px 0px;
+                padding: 0px;
+            }
+            footer li {
+                margin: 0px 3% 0px 3%;
+            }
+            footer span {
+                display: flex;
+                justify-content: center;
+                margin: 0px 0px 10px 0px;
+                color: rgb(153, 70, 14);
+            }
+
+        }
+
     </style>
 </head>
 <body>
@@ -135,25 +376,31 @@
                 <p>For every purchase you make, we will ensure there are no damages or faults and we will check and test the pitch of your instrument. </p>
             </section>
         </div>
-        <iframe width="560" height="315" id="video" src="https://www.youtube.com/embed/bghOBRA0z-Y" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe id="video" src="https://www.youtube.com/embed/bghOBRA0z-Y" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         <div id="pricing">
             <section class="card">
-                <h2>Diatonic harmonica</h2>
+                <h2>Diatonic <br>harmonica</h2>
                 <p>Strictly speaking, diatonic denotes any harmonica designed to play in a single key—though the standard Richter-tuned harmonica diatonic can play other keys by forcing its reeds to play tones that are not part of its basic scale.</p>
-                <h3>30 €</h3>
-                <input type="submit" value="Select" id="submit">
+                <div>
+                    <h3>30 €</h3>
+                    <input class="btn" type="submit" value="Select" id="submit">
+                </div>
             </section>
             <section class="card">
                 <h2>Tremmolo harmonica</h2>
                 <p>The distinguishing feature of the tremolo-tuned harmonica is that it has two reeds per note, with one slightly sharp and the other slightly flat. This provides a unique wavering or warbling sound created by the two reeds being slightly out of tune with each other and the difference in their subsequent waveforms interacting with each other.</p>
-                <h3>35 €</h3>
-                <input type="submit" value="Select" id="submit">
+                <div>
+                    <h3>35 €</h3>
+                    <input class="btn" type="submit" value="Select" id="submit">
+                </div>
             </section>
             <section class="card">
                 <h2>Chromatic harmonica</h2>
-                <p>The chromatic harmonica uses a button-activated sliding bar to redirect air from the hole in the mouthpiece to the selected reed-plate, though one design—the "Machino-Tone"—controlled airflow by means of a lever-operated flap on the rear of the instrument. Also, a "hands-free" modification to the Hohner 270 (12-hole) lets the player shift the tones by moving the mouthpiece up and down with the lips, leaving the hands free to play another instrument.</p>
-                <h3>80 €</h3>
-                <input type="submit" value="Select" id="submit">
+                <p>The chromatic harmonica uses a button-activated sliding bar to redirect air from the hole in the mouthpiece to the selected reed-plate, controling airflow by means of a lever-operated flap on the rear of the instrument. Also, a "hands-free" modification to the Hohner 270 lets the player shift the tones by moving the mouthpiece up and down with the lips, leaving the hands free to play another instrument.</p>
+                <div>
+                    <h3>80 €</h3>
+                    <input class="btn" type="submit" value="Select" id="submit">
+                </div>
             </section>
         </div>
 
