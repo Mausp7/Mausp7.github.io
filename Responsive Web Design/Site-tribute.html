@@ -16,7 +16,7 @@
         }
         header {
             background: linear-gradient(-60deg, rgb(90, 190, 90), rgb(220, 220, 50));
-            color: rgb(20, 80, 10);
+            color: rgb(10, 50, 5);
             text-align: center;
             padding: 1%;
             margin-top: 10px;
@@ -37,13 +37,14 @@
             flex-direction: column;
         }
         img{
-            max-width: 600px;
-            min-width: 150px;
-            width: 30%;
+            max-width: 800px;
+            min-width: 250px;
+            width: 40%;
             height: auto;
             justify-self: center;
             align-self: center;
             margin: 30px 30px 10px 30px;
+            border-radius: 10px;
         }
         #img-caption {
             font-size: 1.5rem;
@@ -55,7 +56,8 @@
             font-size: 1.2rem;
             padding: 10px 5%;
             border-style: groove;
-            border-color: rgb(90, 190, 90);
+            border-color: rgb(10, 90, 5);
+            border-radius: 10px;
         }
         #tribute-info h2 {
             text-align: center;
@@ -80,6 +82,51 @@
         #tribute-info p {
             text-align: center;
             font-size: 1rem;
+        }
+        @media  screen and (max-width: 600px) {
+            body {
+            width: 95%;
+        }
+        header {
+            padding: 0.5%;
+            margin-top: 5px;
+            border-radius: 30px;
+        }
+        #title {
+            font-size: 3rem;
+            margin: 15px 0px;
+        }
+        header h2 {
+            font-size: 1.6rem;
+            margin: 10px 10px;
+        }
+        img{
+            max-width: 600px;
+            min-width: 150px;
+            width: 70%;
+            margin: 20px 20px 5px 20px;
+        }
+        #img-caption {
+            font-size: 1.2rem;
+            align-self: center;
+            margin: 10px 0px 20px 0px;
+        }
+        #tribute-info {
+            width: 96%;
+            font-size: 1.2rem;
+            padding: 5px 2%;
+        }
+        #tribute-info ul li {
+            margin: 15px 0px;
+            padding: 15px;
+            border-radius: 10px;
+            text-shadow:  1px 1px 2px rgba(0, 0, 1, 0.3);
+            box-shadow:  0px 0px 10px rgba(0, 0, 0, 0.6);
+        }
+        #tribute-info p {
+            text-align: center;
+            font-size: 1rem;
+        }
         }
 
     </style>
