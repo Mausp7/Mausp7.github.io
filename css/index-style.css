@@ -429,8 +429,6 @@ h1, h2, h3, h4 {
     }
     #menu a:hover {
         background-color: var(--terciary);
-        margin: 0px;
-        padding: 7.5vh px;
     }
     #welcome-section {
         height: 90vh;
