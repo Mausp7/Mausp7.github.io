@@ -4,14 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=Montserrat&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="css/index-style.css">
-    <link href="../css/Font Awsome/fontawesome-free-5.15.2-web/css/all.css" rel="stylesheet">
-
+    <link href="css/Font Awsome/fontawesome-free-5.15.2-web/css/all.css" rel="stylesheet">
+    
     <title>Portfolio Page</title>
 </head>
 <body>
     <nav id="navbar">
-        <img src="css/pic/index-logo.jpg" alt="Aron Tombacz">
+        <div id="logo">
+            <img src="css/pic/index-logo.jpg" alt="Aron Tombacz">
+            <p>Áron Tombácz</p>
+            <i id="bars" class="fas fa-bars"></i>
+        </div>
         <div id="menu">
             <a href="#welcome-section">Welcome</a>
             <a href="#projects">Projects</a>
@@ -26,25 +32,51 @@
     <section id="projects">
         <h2>from freeCodeCamp:</h2>
         <h3>Responsive Web Design Projects:</h3>
-        <div class="project-tile">
+        <div id="project-grid">
+            <div class="project-tile">
+                <a href="Responsive Web Design/Site-tribute.html" target="_blank">
+                    <img src="css/pic/tribute-page-screenshot.png" alt="Jane Gooddall tribute site">
+                    <p>Tribute page</p>
+                </a>
+            </div>
+            <div class="project-tile">
+                <a href="Responsive Web Design/Form-survey.html" target="_blank">
+                    <img src="css/pic/form-screenshot.png" alt="Course end survey">
+                    <p>Survey form</p>
+                </a>
+            </div>
+            <div class="project-tile">
+                <a href="Responsive Web Design/Product-landing-page.html" target="_blank">
+                    <img src="css/pic/product-page-screenshot.png" alt="Henchmen Harmonicas">
+                    <p>Product landing page</p>
+                </a>
+            </div>
+            <div class="project-tile">
+                <a href="Responsive Web Design/Pseudo-classes-doc.html" target="_blank">
+                    <img src="css/pic/documentation-screenshot.png" alt="CSS Pseudo-classes">
+                    <p>Technical documentation page</p>
+                </a>
+            </div>
 
         </div>
-        <ul>
-            <li>Tribute page: <a href="Responsive Web Design/Site-tribute.html" target="_blank">Jane Goddall tribute page</a>
-            </li>
-            <li>Survey form: <a href="Responsive Web Design/Form-survey.html" target="_blank">Course end survey</a>
-            </li>
-            <li>Product landing page: <a href="Responsive Web Design/Product-landing-page.html" target="_blank">Henchmen Harmonicas</a>
-            </li>
-            <li>Technical documentation page: <a href="Responsive Web Design/Pseudo-classes-doc.html" target="_blank">CSS Pseudo-classes</a>
-            </li>
-        </ul>
-
     </section>
     <section id="contact">
-        <a href="mailto:aron.tombacz@yahoo.com">Email</a>
-        <a href="https://https://www.linkedin.com/in/aron-tombacz/">Linkedin</a>
-        <a href="https://github.com/Mausp7" target="_blank">GitHub</a>
+        <h2>Should we talk about your project...</h2>
+        <p>...over a coffee or a tea?</p>
+        <div id="social-links">
+            <a href="mailto:aron.tombacz@yahoo.com">
+                    <i class="fas fa-at"></i>
+                    Email
+            </a>
+            <a href="https://https://www.linkedin.com/in/aron-tombacz/">
+                <i class="fab fa-linkedin-in"></i>
+                Linkedin
+            </a>
+            <a href="https://github.com/Mausp7" target="_blank">
+                <i class="fab fa-github"></i>
+                GitHub
+            </a>
+        </div>
     </section>
 
 </body>
