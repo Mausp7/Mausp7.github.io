@@ -9,8 +9,13 @@
     margin: 0;
     padding: 0;
 }
+html: {
+    width: 100%;
+    background-color: var(--dark);
+}
 body {
     width: 100%;
+    background-color: var(--dark);
     font-family: 'Montserrat', sans-serif;
 }
 h1, h2, h3, h4 {
@@ -447,6 +452,7 @@ h1, h2, h3, h4 {
         font-size: 3rem;
         color: var(--secondary);
         text-shadow: 2px 2px 3px rgba(0,0,0, 0.9);
+        margin-bottom: 10px;
     }
     #welcome-section p{
         font-size: 2rem;
