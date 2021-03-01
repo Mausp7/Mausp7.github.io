@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>TicTacToe</title>
+    <style>
+        html {
+            font-size: 62.5%;
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            background-color: rgb(0, 90, 160);
+            color: rgb(255, 255, 235);
+        }
+        h1 {
+            font-size: 5rem;
+            margin: 40px 0px 20px 0px;
+        }
+        h2 {
+            font-size: 2.5rem;
+            margin: 0px 0px 40px 0px;
+        }
+        a {
+            color: rgb(255, 240, 100);
+        }
+        #field {
+            width: 336px;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+        .square {
+            display: block;
+            width: 100px;
+            height: 100px;
+            border: rgb(255, 255, 235) inset 6px;
+            font-size: 80px;
+            text-align: center;
+            font-family: 'Comic Sans', Tahoma, Geneva, Verdana, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Let's play<br>Tic Tac Toe</h1>
+    <h2>You know the <a href="https://en.wikipedia.org/wiki/Tic-tac-toe" target="_blank">rules...</a></h2>
+    <div id="field">
+        <section>
+            <block class="square" id="f1">
+            </block>
+        </section>
+        <section>
+            <block class="square" id="f2">
+            </block>
+        </section>
+        <section>
+            <block class="square" id="f3">
+            </block>
+        </section>
+        <section>
+            <block class="square" id="f4">
+            </block>
+        </section>
+        <section>
+            <block class="square" id="f5">
+            </block>
+        </section>
+        <section>
+            <block class="square" id="f6">
+            </block>
+        </section>
+        <section>
+            <block class="square" id="f7">
+            </block>
+        </section>
+        <section>
+            <block class="square" id="f8">
+            </block>
+        </section>
+        <section>
+            <block class="square" id="f9">
+            </block>
+        </section>
+    <script>
+        var counter = 1;
+        const field = document.getElementById("field");
+        var squares = document.getElementsByClassName("square");
+        const f1 = document.getElementById("f1");
+        const f2 = document.getElementById("f2");
+        const f3 = document.getElementById("f3");
+        const f4 = document.getElementById("f4");
+        const f5 = document.getElementById("f5");
+        const f6 = document.getElementById("f6");
+        const f7 = document.getElementById("f7");
+        const f8 = document.getElementById("f8");
+        const f9 = document.getElementById("f9");
+        
+        var v1;
+        var v2;
+        var v3;
+        var v4;
+        var v5;
+        var v6;
+        var v7;
+        var v8;
+        var v9;
+
+        function reset() {
+            v1 = null;
+            v2 = null;
+            v3 = null;
+            v4 = null;
+            v5 = null;
+            v6 = null;
+            v7 = null;
+            v8 = null;
+            v9 = null;
+            counter = 0;
+            for (var square of squares) { 
+                square.innerText = "";
+            }
+        }
+
+
+        field.addEventListener("click", putMark);
+
+        function putMark (element) {
+            const targetElement = element.target;
+            if (targetElement.innerText === "") {
+                if (counter % 2  === 1) {
+                    targetElement.innerText="X";
+                    targetElement.style.color = "rgb(255,20,40)";
+                    standCheck (targetElement.id, true);
+                }
+                else {
+                    targetElement.innerText="O";
+                    targetElement.style.color = "white";
+                    standCheck (targetElement.id, false);
+                }
+            }
+        }
+
+        function standCheck (fieldId, val) {
+            switch (fieldId) {
+                case "f1":
+                    v1 = val;
+                    break;
+                case "f2":
+                    v2 = val;                  
+                    break;
+                case "f3":
+                    v3 = val;
+                    break;
+                case "f4":
+                    v4 = val;
+                    break;
+                case "f5":
+                    v5 = val;
+                    break;
+                case "f6":
+                    v6 = val;
+                    break;
+                case "f7":
+                    v7 = val;
+                    break;
+                case "f8":
+                    v8 = val;
+                    break;
+                case "f9":
+                    v9 = val;
+                    break;
+            }
+            if (v1 && v2 && v3 || v4 && v5 && v6 || v7 && v8 && v9 || v1 && v4 && v7 || v2 && v5 && v8 || v3 && v6 && v9 || v1 && v5 && v9 || v3 && v5 && v7) {
+                alert("X won the game!");
+                reset();
+            }
+            else if (v1 === false && v2 === false && v3 === false || v4 === false && v5 === false && v6 === false || v7 === false && v8 === false && v9 === false || v1 === false && v4 === false && v7 === false || v2 === false && v5 === false && v8 === false || v3 === false && v6 === false && v9 === false || v1 === false && v5 === false && v9 === false || v3 === false && v5 === false && v7 === false) {
+                alert("O won the game!");
+                reset();
+            }
+            else if (counter === 9) {
+                alert("Cat´s game!");
+                reset();
+            }
+            counter++;
+        }
+
+
+
+    </script>
+</body>
+</html>

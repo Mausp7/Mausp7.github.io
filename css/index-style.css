@@ -118,17 +118,16 @@ h1, h2, h3, h4 {
     #projects h2{
         font-size: 4rem;
         color: var(--primary);
-        padding: 50px 0px 20px 0px;
+        padding: 50px 0px 0px 0px;
         text-shadow: 2px 2px 4px grey;
-
     }
     #projects h3{
         font-size: 2.4rem;
         color: var(--terciary);
-        padding: 0px 0px 50px 0px;
+        padding: 50px 0px 40px 0px;
         text-shadow: 2px 2px 4px grey;
     }
-    #project-grid {
+    .project-grid {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
         grid-gap: 4rem;
@@ -287,17 +286,17 @@ h1, h2, h3, h4 {
     #projects h2{
         font-size: 4rem;
         color: var(--primary);
-        padding: 30px 0px 20px 0px;
+        padding: 30px 0px 0px 0px;
         text-shadow: 2px 2px 4px grey;
 
     }
     #projects h3{
         font-size: 2.4rem;
         color: var(--terciary);
-        padding: 0px 0px 50px 0px;
+        padding: 40px 0px 30px 0px;
         text-shadow: 2px 2px 4px grey;
     }
-    #project-grid {
+    .project-grid {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
         grid-gap: 3rem;
@@ -467,17 +466,17 @@ h1, h2, h3, h4 {
     #projects h2{
         font-size: 3rem;
         color: var(--primary);
-        padding: 20px 0px 20px 0px;
+        padding: 20px 0px 0px 0px;
         text-shadow: 2px 2px 4px grey;
 
     }
     #projects h3{
         font-size: 2rem;
         color: var(--terciary);
-        padding: 0px 0px 50px 0px;
+        padding: 30px 0px 30px 0px;
         text-shadow: 2px 2px 4px grey;
     }
-    #project-grid {
+    .project-grid {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
         grid-gap: 3rem;
