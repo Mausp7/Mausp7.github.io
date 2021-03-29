@@ -1,9 +1,16 @@
+/* 
+#DB1F48
+#004369
+#01949A
+#E5DDC8
+*/
+
 :root {
     --primary: #004369;
-    --secondary: rgb(1, 245, 254);
-    --terciary: hsl(345, 70%, 45%);
-    --white: rgb(230, 230, 250);
-    --dark: rgb(20,20,20);
+    --secondary: #01f5fe;
+    --terciary: #c3224b;
+    --white: #e6e6fa;
+    --dark: #141414;
 }
 * {
     margin: 0;
