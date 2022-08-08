@@ -30,7 +30,11 @@ const Navbar = () => {
 			}}
 		>
 			<div style={{ display: "flex", alignItems: "center", height: "100%" }}>
-				<img style={{ height: "75%", marginRight: "10px" }} src={logo} alt="" />
+				<img
+					style={{ height: "50px", marginRight: "10px" }}
+					src={logo}
+					alt=""
+				/>
 				<h1>Aron Tombacz</h1>
 			</div>
 			<div className={menuOn ? "nav-menu nav-menu-on" : "nav-menu"}>

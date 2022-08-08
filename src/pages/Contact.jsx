@@ -1,24 +1,51 @@
 import React from "react";
 import { Button } from "@mui/material";
+import EmailIcon from "@mui/icons-material/Email";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import GitHubIcon from "@mui/icons-material/GitHub";
 
-const Home = () => {
+const Contact = () => {
 	return (
 		<>
-			<div>
-				<h2>Find me on LinkedIn, to get in touch:</h2>
-				<Button
-					variant="contained"
-					startIcon={<LinkedInIcon />}
-					onClick={() =>
-						window.open("https://www.linkedin.com/in/aron-tombacz/", "_blank")
-					}
+			<main id="contact">
+				<h2
+					style={{
+						margin: "0px auto 60px",
+						textAlign: "center",
+					}}
 				>
-					LinkedIn
-				</Button>
-			</div>
+					Let's talk about our next adventure together over a coffee! <br />
+					Get in touch via:
+				</h2>
+
+				<div>
+					<a href="mailto:aron.tombacz@yahoo.com">
+						<Button variant="contained" startIcon={<EmailIcon />}>
+							E-mail
+						</Button>
+					</a>
+
+					<Button
+						variant="contained"
+						startIcon={<LinkedInIcon />}
+						onClick={() =>
+							window.open("https://www.linkedin.com/in/aron-tombacz/", "_blank")
+						}
+					>
+						LinkedIn
+					</Button>
+
+					<Button
+						variant="contained"
+						startIcon={<GitHubIcon />}
+						onClick={() => window.open("https://github.com/Mausp7", "_blank")}
+					>
+						GitHub
+					</Button>
+				</div>
+			</main>
 		</>
 	);
 };
 
-export default Home;
+export default Contact;

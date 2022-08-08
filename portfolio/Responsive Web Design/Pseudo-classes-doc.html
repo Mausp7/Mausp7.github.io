@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" cotennt="width=device-width, initial-scale=1.0">
+    <title>Pseudo-classes documentation</title>
+    <link href="../css/Font Awsome/fontawesome-free-5.15.2-web/css/all.css" rel="stylesheet">
+    <style>
+        @media screen and (max-device-width: 800px) {
+            html {
+                font-size: 62.5%;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+            }
+            body {
+                margin: 0px;
+                padding: 0px;
+            }
+            #navbar {
+                width: 100%;
+                position: sticky;
+                top: 0px;
+                background-color: rgb(0, 30, 90);
+            }
+            #navbar:hover #menu{
+                display: block;
+            }
+            #navbar h1 {
+                margin: 0px;
+                padding: 20px 0px 20px 0px;
+                color: rgb(230, 230, 200);
+                font-size: 2.4rem;
+                text-align: center;
+                text-shadow: 2px 3px 5px rgba(0,0,0,0.9);
+            }
+            .fa-bars {
+                position: fixed;
+                top: 0px;
+                right: 0px;
+                font-size: 2.9rem;
+                padding: 21px 4% 20px 10px;
+                color: rgb(230, 230, 200);
+                z-index: 1;
+                text-shadow: 2px 3px 5px rgba(0,0,0,0.9);
+            }
+            #navbar ul {
+                display: none;
+                list-style: none;
+                width: 100%;
+                margin: 0px;
+                padding: 0px 0px 5px 0px;
+            }
+            #navbar ul li {
+                margin: 2px 10px;
+                padding: 10px 5px 10px 5px;
+                border-radius: 5px;
+                color: rgb(190, 190, 170);
+                transition-property: background-color, color;
+                transition-duration: 0.3s;
+            }
+            #navbar ul li a {
+                text-decoration: none;
+                color: inherit;
+                font-size: 1.8rem;
+            }
+            #navbar ul li:hover {
+                background-color: rgb(20, 50, 110);
+                color: rgb(240, 240, 220);
+            }
+            #main-doc {
+                width: 100%;
+                font-size: 1.5rem;
+                color: rgba(40,40,10,1);
+            }
+            #main-doc section {
+                margin: 30px 10px 50px 10px;
+            }
+            #main-doc h2 {
+                font-weight: 500;
+            }
+            .main-section > code{
+                display: block;
+                background-color: rgb(200, 200, 250);
+                width: 90%;
+                padding: 10px 10px;
+            }
+            .main-section ul {
+                list-style: none;
+            }
+        }
+        @media screen and (min-device-width: 801px) {
+            html {
+                font-size: 62.5%;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+            }
+            #navbar {
+                position: fixed;
+                top: 0px;
+                left: 0px;
+                width: 300px;
+                height: 100%;
+                background-color: rgb(0, 30, 90);
+                overflow-y: auto;
+
+            }
+            .fa-bars {
+                display: none;
+            }
+            #navbar h1 {
+                margin: 30px 0px 40px 0px;
+                color: rgb(230, 230, 200);
+                font-size: 2.5rem;
+                text-align: center;
+                text-shadow: 2px 3px 5px rgba(0,0,0,0.9);
+            }
+            #navbar ul {
+                list-style: none;
+                width: 100%;
+                padding: 0px;
+            }
+            #navbar ul li {
+                margin: 7px 10px;
+                padding: 15px 5px 15px 10px;
+                border-radius: 5px;
+                color: rgb(190, 190, 170);
+                transition-property: background-color, color;
+                transition-duration: 0.3s;
+            }
+            #navbar ul li a {
+                text-decoration: none;
+                color: inherit;
+                font-size: 1.6rem;
+            }
+            #navbar ul li:hover {
+                background-color: rgb(20, 50, 110);
+                color: rgb(240, 240, 220);
+            }
+            #main-doc {
+                margin: 10px 10px 10px 310px;
+                font-size: 1.5rem;
+                color: rgba(40,40,10,1);
+            }
+            #main-doc section {
+                margin: 30px 30px 70px 30px;
+            }
+            #main-doc h2 {
+                font-weight: 600;
+            }
+            .main-section > code{
+                display: block;
+                background-color: rgb(200, 200, 250);
+                width: max-content;
+                padding: 10px 40px;
+            }
+            .main-section ul {
+                list-style: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav id="navbar">
+        <h1>CSS Pseudo-classes
+        </h1>
+        <i class="fas fa-bars"></i>
+        <ul id="menu">
+            <li>
+                <a href="#what_is_a_pseudo-class" class="nav-link">What is Pseudo-class</a>
+            </li>
+            <li>
+                <a href="#anchor_pseudo-classes" class="nav-link">Anchor Pseudo-classes</a>
+            </li>
+            <li>
+                <a href="#the_first_child_pseudo_class" class="nav-link">The  Pseudo-class</a>
+            </li>
+            <li>
+                <a href="#the_last_child_pseudo_class" class="nav-link">The <code>:last-child</code> Pseudo-class</a>
+            </li>
+            <li>
+                <a href="#the_nth-child_pseudo-class" class="nav-link">The <code>:nth-child</code> Pseudo-class</a>
+            </li>
+            <li>
+                <a href="#the_lang_pseudo-class" class="nav-link">The <code>:lang</code> Pseudo-class</a>
+            </li>
+            <li>
+                <a href="#pseudo-classes_and_css_classes" class="nav-link">Pseudo-classes and CSS Classes</a>
+            </li>
+        </ul>
+    </nav>
+    <main id="main-doc">
+        <section id="what_is_a_pseudo-class" class="main-section">
+            <h2>What is Pseudo-class</h2>
+            <p>A CSS pseudo-class selector matches components based on an additional condition and not necessarily defined by the document tree.
+            </p>
+            <p>The CSS pseudo-classes allow you to style the dynamic states of an element such as hover, active and focus state, as well as elements that are existing in the document tree but can't be targeted via the use of other selectors without adding any IDs or classes to them, for example, targeting the first or last child elements.
+            </p>
+             <p>A pseudo-class starts with a colon (:). Its syntax can be given with:
+            </p>
+            <code>selector:pseudo-class { property: value; }
+            </code>
+            <p>The following section describes the most commonly used pseudo-classes.
+            </p>
+        </section>
+        <section id="anchor_pseudo-classes" class="main-section">
+            <h2>Anchor Pseudo-classes</h2>
+            <p>Using anchor pseudo-classes links can be displayed in different ways:
+            </p>
+            <p>These pseudo-classes let you style unvisited links differently from visited ones. The most common styling technique is to remove underlines from visited links.
+            </p>
+            <code>a:link {<br>
+                color: blue;<br>
+                }<br>
+                a:visited {<br>
+                text-decoration: none;<br>
+                }<br>
+            </code>
+            <p>Some anchor pseudo-classes are dynamic — they're applied as a result of user interaction with the document like on hover, or on focus etc.
+            </p>
+            <code>a:hover {<br>
+                color: red;<br>
+                }<br>
+                a:active {<br>
+                color: gray;<br>
+                }<br>
+                a:focus {<br>
+                color: yellow;<br>
+                }<br>
+            </code>
+            <p>These pseudo-classes change how the links are rendered in response to user actions.
+            </p>
+            <ul>
+                <li>
+                    <code>:hover</code> applies when a user places cursor over the element, but does not select it.
+                </li>
+                <li>
+                    <code>:active</code> applies when the element is activated or clicked.
+                </li>
+                <li>
+                    <code>:focus</code> applies when the element has keyboard focus.
+                </li>
+                </ul>
+            <p>To make these pseudo-classes work perfectly, you must define them in the exact order:
+            </p>
+            <ul>
+                <li>
+                    <code>:link</code>
+                </li>
+                <li>
+                    <code>:visited</code>                  
+                </li>
+                <li>
+                    <code>:hover</code>                    
+                </li>
+                <li>
+                    <code>:active</code>
+                </li>
+                <li>
+                    <code>:focus</code>                    
+                </li>
+            </ul>
+        </section>
+        <section id="the_first_child_pseudo_class" class="main-section">
+            <h2>The <code>:first-child</code> Pseudo-class</h2>
+            <p>The <code>:first-child</code> pseudo-class matches an element that is the first child element of some other element. The selector <code>ol li:first-child</code> in the example below select the first list item of an ordered list and removes the top border form it.
+            </p>
+            <code>ol li:first-child {<br>
+                border-top: none;<br>
+                }<br>
+            </code>
+        </section>
+        <section id="the_last_child_pseudo_class" class="main-section">
+            <h2>The <code>:last-child</code> Pseudo-class</h2>
+            <p>The <code>:last-child</code> pseudo-class matches an element that is the last child element of some other element. The selector <code>ul li:last-child</code> in the example below select the last list item from an unordered list and removes the right border from it.
+            </p>
+            <code>
+                ul li:last-child {<br>
+                    border-right: none;<br>
+                }<br>
+            </code>    
+        </section>
+        <section id="the_nth-child_pseudo-class" class="main-section">
+            <h2>The <code>:nth-child</code> Pseudo-class</h2>
+            <p>The CSS3 introduces a new <code>:nth-child</code> pseudo-class that allows you to target one or more specific children of a given parent element. The basic syntax of this selector can be given with <code>:nth-child(N)</code>, where N is an argument, which can be a number, a keyword (even or odd), or an expression of the form xn+y where x and y are integers (e.g. 1n, 2n, 2n+1, …).
+            </p>
+            <code>
+                table tr:nth-child(2n) td {<br>
+                    background: #eee;<br>
+                }<br>
+            </code>    
+            <p>The CSS <code>:nth-child(N)</code> selector is very useful in the situations where you have to select the elements that appears inside the document tree in a specific interval or pattern like at even or odd places, etc.
+            </p>
+        </section>
+        <section id="the_lang_pseudo-class" class="main-section">
+            <h2>The <code>:lang</code> Pseudo-class</h2>
+            <p>The language pseudo-class <code>:lang</code> allows constructing selectors based on the language setting for specific tags. The <code>:lang</code> pseudo-class in the example below defines the quotation marks for <code><q></q></code> elements that are explicitly given a language value of no.
+            </p>
+            <code>q:lang(no) {<br>
+                quotes: "~" "~";<br>
+                }<br>
+            </code>                    
+            <p>Internet Explorer up to version 7 does not support the <code>:lang</code> pseudo-class. IE8 supports only if a <code>!DOCTYPE</code> is specified.
+            </p>
+        </section>
+        <section id="pseudo-classes_and_css_classes" class="main-section">
+            <h2>Pseudo-classes and CSS Classes</h2>
+            <p>Pseudo-classes can be combined with CSS classes.
+            </p>
+            <p>The link with <code>class="red"</code>, in the example below will be displayed in red.
+            </p> 
+            <code>
+                a.red:link {    /* style rule */<br>
+                    color: #ff0000;<br>
+                }<br>
+            </code>   
+        </section>
+    </main>
+</body>
+</html>
