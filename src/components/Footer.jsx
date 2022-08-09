@@ -8,7 +8,7 @@ const Footer = () => {
 			{display && (
 				<footer
 					style={{
-						position: "absolute",
+						//position: "absolute",
 						left: "0px",
 						bottom: "0px",
 						zIndex: "99",

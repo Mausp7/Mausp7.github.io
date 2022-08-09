@@ -9,6 +9,16 @@ import connect4 from "../media/pic/projects/connect4-screenshot.jpg";
 
 
 const projects = [
+    {
+		name: "Max Vis Dive App",
+		pic: "",
+		link: "https://github.com/Mausp7/max-vis-dive-app",
+	},
+	{
+		name: "Movie Database Search App",
+		pic: "",
+		link: "https://github.com/Mausp7/apex-test",
+	},
 	{
 		name: "Szürke Puli Veterinary Center Homepage",
 		pic: szurkepuli,
@@ -37,17 +47,17 @@ const projects = [
 	{
 		name: "JavaScript TicTacToe Game",
 		pic: tictactoe,
-		link: "https://hbmangalicafarm.hu/",
+		link: "https://github.com/Mausp7/Mausp7.github.io/blob/main/portfolio/JavaScript/TicTacToe.html",
 	},
 	{
 		name: "Python Hangman Game",
 		pic: hangman,
-		link: "https://hbmangalicafarm.hu/",
+		link: "https://github.com/Mausp7/Mausp7.github.io/blob/main/portfolio/Python/Hangman.py",
 	},
 	{
 		name: "Python Connect4 Game",
 		pic: connect4,
-		link: "https://hbmangalicafarm.hu/",
+		link: "https://github.com/Mausp7/Mausp7.github.io/blob/main/portfolio/Python/Connect4.py",
 	},
 ];
 
