@@ -1,0 +1,59 @@
+$light: rgba(218, 237, 251, 1);
+$light-t: rgba(218, 237, 251, 0.9);
+$error: rgba(212, 66, 53, 1);
+$dark: rgba(89, 98, 85, 1);
+$secondary: rgb(10, 84, 255);
+$primary: rgb(15, 26, 67);
+$secondary-t: rgba(10, 84, 255, 0.95);
+$primary-t: rgba(15, 26, 67, 0.93);
+
+nav{
+    z-index: 99;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.6);
+
+    h1 {
+        @media screen and (max-width: 650px) {
+            font-size: 16px;
+        }
+    }
+}
+
+.nav-menu {
+    @media screen and (max-width: 1100px) {
+        position: absolute;
+        right: -100%;
+        top: 60px;
+        z-index: 10;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-end;
+        width: 100%;
+        height: 360px;
+
+        padding: 10px 20px 10px 10px;
+        background-color: $secondary-t;
+        box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.6);
+
+        transition: right 400ms ease-out;
+
+        @media screen and (min-width: 651px) {
+            right: -280px;
+
+            width: 280px;
+        }
+    }
+
+}
+
+.nav-menu.nav-menu-on {
+    right: 0px;
+}
+
+@media screen and (min-width: 1101px) {
+    #toggle-btn {
+        display: none;
+    }
+}
+

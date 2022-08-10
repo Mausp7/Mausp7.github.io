@@ -8,6 +8,7 @@ import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 
 import PortfolioItem from "../components/PortfolioItem";
 import projects from "../projects/projects";
+import "./Portfolio.scss";
 
 const Portfolio = () => {
 	const [display, setDisplay] = useState(0);
@@ -21,7 +22,7 @@ const Portfolio = () => {
 					disabled={display <= 0}
 					onClick={() => setDisplay(display - 1)}
 				>
-					<NavigateBeforeIcon />
+					<NavigateBeforeIcon style={{ fontSize: "40px" }} />
 				</Button>
 
 				<Button
@@ -30,7 +31,7 @@ const Portfolio = () => {
 					disabled={display <= 0}
 					onClick={() => setDisplay(display - 1)}
 				>
-					<KeyboardArrowUpIcon />
+					<KeyboardArrowUpIcon style={{ fontSize: "40px" }} />
 				</Button>
 
 				<Grid container spacing={2}>
@@ -45,7 +46,7 @@ const Portfolio = () => {
 					disabled={display >= projects.length - 3}
 					onClick={() => setDisplay(display + 1)}
 				>
-					<NavigateNextIcon />
+					<NavigateNextIcon style={{ fontSize: "40px" }} />
 				</Button>
 				<Button
 					variant="text"
@@ -53,7 +54,7 @@ const Portfolio = () => {
 					disabled={display >= projects.length - 3}
 					onClick={() => setDisplay(display + 1)}
 				>
-					<KeyboardArrowDownIcon />
+					<KeyboardArrowDownIcon style={{ fontSize: "40px" }} />
 				</Button>
 			</div>
 			{/* 			<Grid container spacing={2}>

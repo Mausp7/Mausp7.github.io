@@ -1,3 +1,5 @@
+import maxvis from "../media/pic/projects/max-vis-screenshot.jpg";
+import moviesearch from "../media/pic/projects/movie-search-screenshot.jpg";
 import szurkepuli from "../media/pic/projects/szurkepuli-screenshot.jpg";
 import hbmangalica from "../media/pic/projects/hbmangalica-screenshot.jpg";
 import surveyform from "../media/pic/projects/form-screenshot.jpg";
@@ -10,39 +12,39 @@ import connect4 from "../media/pic/projects/connect4-screenshot.jpg";
 
 const projects = [
     {
-		name: "Max Vis Dive App",
-		pic: "",
+		name: "Dive Decompression Calculator",
+		pic: maxvis,
 		link: "https://github.com/Mausp7/max-vis-dive-app",
 	},
 	{
 		name: "Movie Database Search App",
-		pic: "",
-		link: "https://github.com/Mausp7/apex-test",
+		pic: moviesearch,
+		link: "https://mausp7.github.io/apex-test/",
 	},
 	{
-		name: "Szürke Puli Veterinary Center Homepage",
+		name: "Veterinary Center Homepage",
 		pic: szurkepuli,
 		link: "https://www.szurkepuli.hu/english.html",
 	},
 	{
-		name: "HB Organic Farm Wordpress Homepage",
+		name: "Organic Farm Wordpress Page",
 		pic: hbmangalica,
 		link: "https://hbmangalicafarm.hu/",
 	},
     {
-		name: "Course end survey form",
+		name: "Survey Form",
 		pic: surveyform,
-		link: "https://hbmangalicafarm.hu/",
+		link: "",
 	},
 	{
-		name: "Henchmen Harmonicas Product Page",
+		name: "Product Landing Page",
 		pic: productpage,
-		link: "https://hbmangalicafarm.hu/",
+		link: "",
 	},
 	{
-		name: "CSS Pseudo-classes Documentation",
+		name: "Technical Documentation",
 		pic: documentation,
-		link: "https://hbmangalicafarm.hu/",
+		link: "",
 	},
 	{
 		name: "JavaScript TicTacToe Game",

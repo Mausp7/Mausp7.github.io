@@ -1,9 +1,10 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Button } from "@mui/material";
-import logo from "../media/pic/logo.png";
+import logo from "../media/pic/index-logo.jpg";
 import MenuIcon from "@mui/icons-material/Menu";
 import MenuOpenIcon from "@mui/icons-material/MenuOpen";
+import "./Navbar.scss";
 
 const Navbar = () => {
 	const nav = useNavigate();
@@ -12,6 +13,11 @@ const Navbar = () => {
 	const navigate = (url) => {
 		setMenuOn(false);
 		nav(url);
+	};
+
+	const scroll = (url, id) => {
+		navigate(url);
+		document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
 	};
 
 	return (
@@ -31,11 +37,22 @@ const Navbar = () => {
 		>
 			<div style={{ display: "flex", alignItems: "center", height: "100%" }}>
 				<img
-					style={{ height: "50px", marginRight: "10px" }}
+					style={{ height: "50px", marginRight: "10px", borderRadius: "50%" }}
 					src={logo}
 					alt=""
 				/>
-				<h1>Aron Tombacz</h1>
+				<div
+					style={{
+						display: "flex",
+						flexDirection: "column",
+						justifyContent: "center",
+						alignItems: "flex-end",
+						height: "100%",
+					}}
+				>
+					<h1>Aron Tombacz</h1>
+					<p>web developer</p>
+				</div>
 			</div>
 			<div className={menuOn ? "nav-menu nav-menu-on" : "nav-menu"}>
 				<Button
@@ -43,10 +60,31 @@ const Navbar = () => {
 					size="medium"
 					color="secondary"
 					style={{ fontSize: "16px" }}
-					onClick={() => navigate("/")}
+					onClick={() => scroll("/", "intro")}
 				>
 					Home
 				</Button>
+
+				<Button
+					variant="text"
+					size="medium"
+					color="secondary"
+					style={{ fontSize: "16px" }}
+					onClick={() => scroll("/", "skills")}
+				>
+					Skills
+				</Button>
+
+				<Button
+					variant="text"
+					size="medium"
+					color="secondary"
+					style={{ fontSize: "16px" }}
+					onClick={() => scroll("/", "portfolio")}
+				>
+					Portfolio
+				</Button>
+
 				<Button
 					variant="text"
 					size="medium"
@@ -57,8 +95,9 @@ const Navbar = () => {
 					Contact
 				</Button>
 			</div>
+
 			<Button
-				className="nav-menu-toggle"
+				id="toggle-btn"
 				variant="text"
 				color={menuOn ? "attention" : "secondary"}
 				onClick={() => setMenuOn(!menuOn)}
