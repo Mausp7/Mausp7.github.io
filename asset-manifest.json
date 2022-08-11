@@ -1,14 +1,11 @@
 {
   "files": {
-    "main.css": "/static/css/main.a2870ebb.css",
-    "main.js": "/static/js/main.2cb2b3b2.js",
+    "main.css": "/static/css/main.74d8b385.css",
+    "main.js": "/static/js/main.0772e6f4.js",
     "static/media/welcome-background.jpg": "/static/media/welcome-background.84e8ad1a38422b007487.jpg",
     "static/media/contact-background.jpg": "/static/media/contact-background.a20f235d105d715a4966.jpg",
     "static/media/hbmangalica-screenshot.jpg": "/static/media/hbmangalica-screenshot.ba1e24220b79126a585e.jpg",
     "static/media/szurkepuli-screenshot.jpg": "/static/media/szurkepuli-screenshot.f9b14c6a4c904336be18.jpg",
-    "static/media/documentation-screenshot.jpg": "/static/media/documentation-screenshot.70e3d6f1a988cbec4629.jpg",
-    "static/media/form-screenshot.jpg": "/static/media/form-screenshot.13a86c6875a5c0a01df8.jpg",
-    "static/media/product-page-screenshot.jpg": "/static/media/product-page-screenshot.0b78df802aa81a49ad9b.jpg",
     "static/media/max-vis-screenshot.jpg": "/static/media/max-vis-screenshot.57c424cc4c18bd32b173.jpg",
     "static/media/hangman-screenshot.jpg": "/static/media/hangman-screenshot.b12dc898ed51f42fa25a.jpg",
     "static/media/connect4-screenshot.jpg": "/static/media/connect4-screenshot.2d664b07dca789fe4513.jpg",
@@ -16,11 +13,11 @@
     "static/media/tictactoe-screenshot.jpg": "/static/media/tictactoe-screenshot.0a6383fb8ecd5763f500.jpg",
     "static/media/index-logo.jpg": "/static/media/index-logo.40737ebcd9738b732c93.jpg",
     "index.html": "/index.html",
-    "main.a2870ebb.css.map": "/static/css/main.a2870ebb.css.map",
-    "main.2cb2b3b2.js.map": "/static/js/main.2cb2b3b2.js.map"
+    "main.74d8b385.css.map": "/static/css/main.74d8b385.css.map",
+    "main.0772e6f4.js.map": "/static/js/main.0772e6f4.js.map"
   },
   "entrypoints": [
-    "static/css/main.a2870ebb.css",
-    "static/js/main.2cb2b3b2.js"
+    "static/css/main.74d8b385.css",
+    "static/js/main.0772e6f4.js"
   ]
 }
