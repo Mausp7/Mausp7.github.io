@@ -17,12 +17,12 @@ const Home = () => {
 						<p>
 							I am a junior full-stack API developer.
 							<br />
-							This my Portfolio Page, ecolving and updating almost every day.
+							This my portfolio page, getting updates almost every day.
 						</p>
 						<Button
-							variant="outlined"
+							variant="contained"
 							size="large"
-							color="secondary"
+							color="primary"
 							onClick={() => navigate("contact")}
 						>
 							Get in touch!

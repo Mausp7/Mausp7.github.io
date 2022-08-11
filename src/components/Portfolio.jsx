@@ -18,6 +18,7 @@ const Portfolio = () => {
 			<div className="carousel">
 				<Button
 					variant="text"
+					color="light"
 					className="horizontalSlider"
 					disabled={display <= 0}
 					onClick={() => setDisplay(display - 1)}
@@ -27,6 +28,7 @@ const Portfolio = () => {
 
 				<Button
 					variant="text"
+					color="light"
 					className="verticalSlider"
 					disabled={display <= 0}
 					onClick={() => setDisplay(display - 1)}
@@ -42,6 +44,7 @@ const Portfolio = () => {
 
 				<Button
 					variant="text"
+					color="light"
 					className="horizontalSlider"
 					disabled={display >= projects.length - 3}
 					onClick={() => setDisplay(display + 1)}
@@ -50,6 +53,7 @@ const Portfolio = () => {
 				</Button>
 				<Button
 					variant="text"
+					color="light"
 					className="verticalSlider"
 					disabled={display >= projects.length - 3}
 					onClick={() => setDisplay(display + 1)}

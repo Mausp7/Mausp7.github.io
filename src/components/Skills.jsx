@@ -56,6 +56,7 @@ const Skills = () => {
 					>
 						<TiHtml5 />
 						<Slider
+							color="secondary"
 							value={5}
 							valueLabelDisplay="auto"
 							step={1}
@@ -72,6 +73,7 @@ const Skills = () => {
 					>
 						<FaSass />
 						<Slider
+							color="secondary"
 							value={4}
 							valueLabelDisplay="auto"
 							step={1}
@@ -88,6 +90,7 @@ const Skills = () => {
 					>
 						<FaReact />
 						<Slider
+							color="secondary"
 							value={3}
 							valueLabelDisplay="auto"
 							step={1}
@@ -104,6 +107,7 @@ const Skills = () => {
 					>
 						<FaNodeJs />
 						<Slider
+							color="secondary"
 							value={3}
 							valueLabelDisplay="auto"
 							step={1}
@@ -120,6 +124,7 @@ const Skills = () => {
 					>
 						<SiMongodb />
 						<Slider
+							color="secondary"
 							value={2}
 							valueLabelDisplay="auto"
 							step={1}
@@ -136,9 +141,9 @@ const Skills = () => {
 					>
 						<FaDocker />
 						<Slider
+							color="secondary"
 							value={1}
 							valueLabelDisplay="auto"
-							color="primary"
 							step={1}
 							min={0}
 							max={5}

@@ -35,7 +35,7 @@ const Navbar = () => {
 				<Button
 					variant="text"
 					size="large"
-					color="secondary"
+					color="light"
 					style={{ marginLeft: "12px", fontSize: "18px" }}
 					onClick={() => scroll("/", "intro")}
 				>
@@ -45,7 +45,7 @@ const Navbar = () => {
 				<Button
 					variant="text"
 					size="large"
-					color="secondary"
+					color="light"
 					style={{ marginLeft: "12px", fontSize: "18px" }}
 					onClick={() => scroll("/", "skills")}
 				>
@@ -55,7 +55,7 @@ const Navbar = () => {
 				<Button
 					variant="text"
 					size="large"
-					color="secondary"
+					color="light"
 					style={{ marginLeft: "12px", fontSize: "18px" }}
 					onClick={() => scroll("/", "portfolio")}
 				>
@@ -65,7 +65,7 @@ const Navbar = () => {
 				<Button
 					variant="text"
 					size="large"
-					color="secondary"
+					color="light"
 					style={{ marginLeft: "12px", fontSize: "18px" }}
 					onClick={() => navigate("/contact")}
 				>
@@ -75,7 +75,7 @@ const Navbar = () => {
 			<Button
 				id="toggle-btn"
 				variant="text"
-				color={menuOn ? "attention" : "secondary"}
+				color="light"
 				onClick={() => setMenuOn(!menuOn)}
 			>
 				{menuOn ? (

@@ -8,10 +8,33 @@
 
     padding: 100px 10px 50px;
 
-
     background-image: linear-gradient(70deg, rgba(160, 20, 40, 0.2), rgba(0,0,10,1)), url('../media/pic/contact-background.jpg');
 
-    div {
+    h2 {
+        font-size: 1.8em;
+
+        text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.8);
+
+        @media screen and (max-width: 650px) {
+            font-size: 1.2em;
+        }
+    }
+
+
+
+    form {
+        display: none;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 360px;
+        height: 300px;
+
+        margin: 20px;
+        padding: 20px;
+        background-color: colors.$light;
+    }
+
+    .contact-btn-container {
         width: 100%;
         display: flex;
         justify-content: space-evenly;

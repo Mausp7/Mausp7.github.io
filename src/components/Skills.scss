@@ -5,11 +5,21 @@
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    min-height: calc(100vh);
+    min-height: calc(100vh - 60px);
 
-    padding: 80px 20px 30px;
-    color: colors.$primary;
+    padding: 30px 20px 30px;
+    color: colors.$secondary;
     background-color: colors.$light-t;
+
+    h2 {
+        font-size: 2.2em;
+
+        text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
+
+        @media screen and (max-width: 650px) {
+            font-size: 1.6em;
+        }
+    }
 
     .container {
         display: flex;
@@ -26,7 +36,7 @@
             width: 60px;
             height: auto;
             
-            color: colors.$primary;
+            color: colors.$secondary;
 
             cursor: pointer;
         }

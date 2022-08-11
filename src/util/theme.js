@@ -2,11 +2,11 @@ import { createTheme } from "@mui/material/styles";
 
 const theme = createTheme({
 	palette: {
-		secondary: {
-			main: "rgba(218, 237, 251, 1)",
-		},
 		primary: {
-			main: "rgba(15, 26, 67, 1)",
+			main: "#B6162E",
+		},
+		secondary: {
+			main: "#0b4f6c",
 		},
 		error: {
 			main: "rgba(212, 66, 53, 1)",
@@ -15,10 +15,10 @@ const theme = createTheme({
 			main: "rgba(10, 84, 255, 1)",
 		},
 		light: {
-			main: "rgba(218, 237, 251, 1)",
+			main: "#effffd",
 		},
 		dark: {
-			main: "rgba(89, 98, 85, 1)",
+			main: "rgba(28, 28, 35, 1)",
 		},
 	},
 });
