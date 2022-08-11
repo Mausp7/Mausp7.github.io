@@ -4,6 +4,8 @@ import EmailIcon from "@mui/icons-material/Email";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 
+import "./Contact.scss";
+
 const Contact = () => {
 	return (
 		<>
@@ -20,13 +22,20 @@ const Contact = () => {
 
 				<div>
 					<a href="mailto:aron.tombacz@yahoo.com">
-						<Button variant="contained" startIcon={<EmailIcon />}>
+						<Button
+							variant="outlined"
+							color="secondary"
+							size="large"
+							startIcon={<EmailIcon />}
+						>
 							E-mail
 						</Button>
 					</a>
 
 					<Button
-						variant="contained"
+						variant="outlined"
+						color="secondary"
+						size="large"
 						startIcon={<LinkedInIcon />}
 						onClick={() =>
 							window.open("https://www.linkedin.com/in/aron-tombacz/", "_blank")
@@ -36,7 +45,9 @@ const Contact = () => {
 					</Button>
 
 					<Button
-						variant="contained"
+						variant="outlined"
+						color="secondary"
+						size="large"
 						startIcon={<GitHubIcon />}
 						onClick={() => window.open("https://github.com/Mausp7", "_blank")}
 					>

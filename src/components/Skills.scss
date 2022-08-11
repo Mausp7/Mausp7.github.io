@@ -1,11 +1,4 @@
-$light: rgba(218, 237, 251, 1);
-$light-t: rgba(218, 237, 251, 0.9);
-$error: rgba(212, 66, 53, 1);
-$dark: rgba(89, 98, 85, 1);
-$secondary: rgb(10, 84, 255);
-$primary: rgb(15, 26, 67);
-$secondary-t: rgba(10, 84, 255, 0.6);
-$primary-t: rgba(15, 26, 67, 0.93);
+@use '../util/colors.scss';
 
 #skills {
     display: flex;
@@ -15,8 +8,8 @@ $primary-t: rgba(15, 26, 67, 0.93);
     min-height: calc(100vh);
 
     padding: 80px 20px 30px;
-    color: $primary;
-    background-color: $light-t;
+    color: colors.$primary;
+    background-color: colors.$light-t;
 
     .container {
         display: flex;
@@ -33,7 +26,7 @@ $primary-t: rgba(15, 26, 67, 0.93);
             width: 60px;
             height: auto;
             
-            color: $primary;
+            color: colors.$primary;
 
             cursor: pointer;
         }
@@ -48,7 +41,7 @@ $primary-t: rgba(15, 26, 67, 0.93);
             min-width: 300px;
             min-height: 200px;
 
-            padding: 40px 10px;
+            padding: 30px 10px;
 
             text-align: center;
 

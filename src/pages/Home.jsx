@@ -12,12 +12,22 @@ const Home = () => {
 		<>
 			<main id="home">
 				<section id="intro">
-					<h2>Hello, I am Archie,</h2>
-					<p>a junior full-stack API developer.</p>
-					<p>This my Portfolio Page, ecolving and updating almost every day.</p>
-					<Button variant="contained" onClick={() => navigate("contact")}>
-						Get in touch!
-					</Button>
+					<div className="container">
+						<h2>Hello, call me Archie!</h2>
+						<p>
+							I am a junior full-stack API developer.
+							<br />
+							This my Portfolio Page, ecolving and updating almost every day.
+						</p>
+						<Button
+							variant="outlined"
+							size="large"
+							color="secondary"
+							onClick={() => navigate("contact")}
+						>
+							Get in touch!
+						</Button>
+					</div>
 				</section>
 				<Skills />
 				<Portfolio />

@@ -34,7 +34,7 @@ const Portfolio = () => {
 					<KeyboardArrowUpIcon style={{ fontSize: "40px" }} />
 				</Button>
 
-				<Grid container spacing={2}>
+				<Grid container spacing={2} sx={{ width: "85%" }}>
 					<PortfolioItem project={projects[display]} />
 					<PortfolioItem project={projects[display + 1]} />
 					<PortfolioItem project={projects[display + 2]} />
