@@ -20,16 +20,11 @@ const Contact = () => {
 	return (
 		<>
 			<main id="contact">
-				<h2
-					style={{
-						margin: "0px auto 60px",
-						textAlign: "center",
-					}}
-				>
-					Let's talk about our next adventure together over a coffee! <br />
-					Find me via:
+				<h2>
+					Let's talk about our next adventure together over a coffee or tea!
+					<br />
 				</h2>
-
+				<p>You can find me via:</p>
 				<form>
 					<TextField
 						variant="outlined"
@@ -69,12 +64,11 @@ const Contact = () => {
 						Send
 					</Button>
 				</form>
-
 				<div className="contact-btn-container">
 					<a href="mailto:aron.tombacz@yahoo.com">
 						<Button
 							variant="outlined"
-							color="secondary"
+							color="light"
 							size="large"
 							startIcon={<EmailIcon />}
 						>
@@ -84,7 +78,7 @@ const Contact = () => {
 
 					<Button
 						variant="outlined"
-						color="secondary"
+						color="light"
 						size="large"
 						startIcon={<LinkedInIcon />}
 						onClick={() =>
@@ -96,7 +90,7 @@ const Contact = () => {
 
 					<Button
 						variant="outlined"
-						color="secondary"
+						color="light"
 						size="large"
 						startIcon={<GitHubIcon />}
 						onClick={() => window.open("https://github.com/Mausp7", "_blank")}

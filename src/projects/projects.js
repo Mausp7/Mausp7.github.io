@@ -2,9 +2,9 @@ import maxvis from "../media/pic/projects/max-vis-screenshot.jpg";
 import moviesearch from "../media/pic/projects/movie-search-screenshot.jpg";
 import szurkepuli from "../media/pic/projects/szurkepuli-screenshot.jpg";
 import hbmangalica from "../media/pic/projects/hbmangalica-screenshot.jpg";
-import surveyform from "../media/pic/projects/form-screenshot.jpg";
-import productpage from "../media/pic/projects/product-page-screenshot.jpg";
-import documentation from "../media/pic/projects/documentation-screenshot.jpg";
+// import surveyform from "../media/pic/projects/form-screenshot.jpg";
+// import productpage from "../media/pic/projects/product-page-screenshot.jpg";
+// import documentation from "../media/pic/projects/documentation-screenshot.jpg";
 import tictactoe from "../media/pic/projects/tictactoe-screenshot.jpg";
 import hangman from "../media/pic/projects/hangman-screenshot.jpg";
 import connect4 from "../media/pic/projects/connect4-screenshot.jpg";
@@ -31,7 +31,7 @@ const projects = [
 		pic: hbmangalica,
 		link: "https://hbmangalicafarm.hu/",
 	},
-    {
+    /* {
 		name: "Survey Form",
 		pic: surveyform,
 		link: "",
@@ -45,7 +45,7 @@ const projects = [
 		name: "Technical Documentation",
 		pic: documentation,
 		link: "",
-	},
+	}, */
 	{
 		name: "JavaScript TicTacToe Game",
 		pic: tictactoe,

@@ -44,7 +44,7 @@ const Skills = () => {
 	const [skill, setSkill] = useState(skills.html);
 	return (
 		<section id="skills">
-			<h2>Look at all the stack!</h2>
+			<h2>Look at my stack!</h2>
 			<div className="container">
 				<Box sx={{ width: 300 }}>
 					<Stack
