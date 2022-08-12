@@ -6,7 +6,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 import MenuOpenIcon from "@mui/icons-material/MenuOpen";
 
 import "./Navbar.scss";
-import logo from "../media/pic/index-logo.jpg";
+import logo from "../media/pic/at-profile.jpg";
 
 const Navbar = () => {
 	const nav = useNavigate();
