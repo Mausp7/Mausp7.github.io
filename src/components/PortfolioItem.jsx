@@ -1,5 +1,7 @@
 import Grid from "@mui/material/Grid";
 
+import "./PortfolioItem.scss";
+
 const PortfolioItem = ({ project }) => {
 	return (
 		<Grid className="portfolioItem" item xs={12} md={4}>
