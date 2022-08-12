@@ -61,11 +61,13 @@ body {
 
 #root {
 	position: relative;
-
+	background-color: colors.$dark;
+	
 	main{
 		width: 100%;
 		max-width: 1400px;
-
+		
+		margin: 60px auto 0px;
 		padding: 0px 0px 0px;
 		background-color: colors.$primary;
 		background-position: center;
