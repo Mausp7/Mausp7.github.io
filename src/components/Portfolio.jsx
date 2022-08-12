@@ -7,7 +7,7 @@ import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 
 import PortfolioItem from "../components/PortfolioItem";
-import projects from "../projects/projects";
+import projects from "../data/projects";
 import "./Portfolio.scss";
 
 const Portfolio = () => {

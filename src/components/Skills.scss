@@ -10,6 +10,7 @@
     padding: 50px 20px 30px;
     color: colors.$secondary;
     background-color: colors.$light-t;
+    background-image: linear-gradient(180deg, colors.$dark-t 0%, colors.$light-t 10%, colors.$light-t 90%, colors.$primary-t 100%);
 
     h2 {
         font-size: 2.2em;
@@ -58,7 +59,7 @@
             h3 {
                 margin-bottom: 20px;
 
-                font-size: 1.6em;
+                font-size: 1.8em;
             }
 
             p {
