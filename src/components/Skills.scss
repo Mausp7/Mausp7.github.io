@@ -8,9 +8,10 @@
     min-height: calc(100vh - 60px);
 
     padding: 50px 20px 30px;
-    color: colors.$secondary;
+    color: colors.$light;
     background-color: colors.$light-t;
-    background-image: linear-gradient(180deg, colors.$dark-t 0%, colors.$light-t 10%, colors.$light-t 90%, colors.$primary-t 100%);
+    background-image: linear-gradient(180deg, colors.$primary-t 0%, colors.$dark 0%, colors.$dark-t 100%);
+    box-shadow: 0px 10px 10px #000;
 
     h2 {
         font-size: 2.2em;
@@ -37,9 +38,15 @@
             width: 60px;
             height: auto;
             
-            color: colors.$secondary;
+            color: colors.$light;
 
             cursor: pointer;
+            transition: transform 150ms ease-in-out, color 150ms ease-in-out;
+
+            &:hover {
+                color: colors.$primary;
+                transform: scale(1.15);
+            }
         }
 
         .details {
