@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.2f62e41c.css",
-    "main.js": "/static/js/main.7021e76e.js",
+    "main.css": "/static/css/main.d0d55519.css",
+    "main.js": "/static/js/main.33ea45cd.js",
     "static/media/welcome-background.jpg": "/static/media/welcome-background.84e8ad1a38422b007487.jpg",
     "static/media/contact-background.jpg": "/static/media/contact-background.a20f235d105d715a4966.jpg",
     "static/media/hbmangalica-screenshot.jpg": "/static/media/hbmangalica-screenshot.ba1e24220b79126a585e.jpg",
@@ -13,12 +13,15 @@
     "static/media/tictactoe-screenshot.jpg": "/static/media/tictactoe-screenshot.0a6383fb8ecd5763f500.jpg",
     "static/media/at-profile.jpg": "/static/media/at-profile.40737ebcd9738b732c93.jpg",
     "static/media/at-portrait.jpg": "/static/media/at-portrait.bfc7a4cf14acda39b173.jpg",
+    "static/media/revicons.eot": "/static/media/revicons.a77de540a38981833f9e.eot",
+    "static/media/revicons.ttf": "/static/media/revicons.57fd05d4ae650374c8de.ttf",
+    "static/media/revicons.woff": "/static/media/revicons.e8746a624ed098489406.woff",
     "index.html": "/index.html",
-    "main.2f62e41c.css.map": "/static/css/main.2f62e41c.css.map",
-    "main.7021e76e.js.map": "/static/js/main.7021e76e.js.map"
+    "main.d0d55519.css.map": "/static/css/main.d0d55519.css.map",
+    "main.33ea45cd.js.map": "/static/js/main.33ea45cd.js.map"
   },
   "entrypoints": [
-    "static/css/main.2f62e41c.css",
-    "static/js/main.7021e76e.js"
+    "static/css/main.d0d55519.css",
+    "static/js/main.33ea45cd.js"
   ]
 }
