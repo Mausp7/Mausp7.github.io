@@ -10,6 +10,8 @@
     background-color: colors.$primary-t;
 
     h2 {
+        margin-bottom: 20px;
+
         font-size: 2.2em;
         text-align: center;
         text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.8);
@@ -19,28 +21,8 @@
         }
     }
 
-
-    .carousel {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-
-        @media screen and (max-width: 899px) {
-            flex-direction: column;
-        }
-
-        
+    .carousel-item {
+        padding: 20px
     }
 
-    @media screen and (max-width: 899px) {
-        .horizontalSlider {
-                display: none;
-            }
-        }
-    
-    @media screen and (min-width: 900px) {
-        .verticalSlider {
-                display: none;
-            }
-        }
     }

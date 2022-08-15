@@ -36,7 +36,7 @@ const Intro = () => {
 					color="primary"
 					onClick={() => navigate("contact")}
 				>
-					Get in touch!
+					Let's get in touch
 				</Button>
 			</div>
 		</section>

@@ -1,72 +1,53 @@
-import { useState } from "react";
-import Grid from "@mui/material/Grid";
-import { Button } from "@mui/material";
-import NavigateBeforeIcon from "@mui/icons-material/NavigateBefore";
-import NavigateNextIcon from "@mui/icons-material/NavigateNext";
-import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
-import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
 
 import PortfolioItem from "../components/PortfolioItem";
 import projects from "../data/projects";
 import "./Portfolio.scss";
 
-const Portfolio = () => {
-	const [display, setDisplay] = useState(0);
+const Portfolio = (props) => {
+	const responsive = {
+		desktop: {
+			breakpoint: { max: 3000, min: 950 },
+			items: 3,
+			slidesToSlide: 1,
+		},
+		tablet: {
+			breakpoint: { max: 949, min: 600 },
+			items: 2,
+			slidesToSlide: 1,
+		},
+		mobile: {
+			breakpoint: { max: 599, min: 0 },
+			items: 1,
+			slidesToSlide: 1,
+		},
+	};
+
 	return (
 		<section id="portfolio">
 			<h2>Let´s see some of my projects:</h2>
-			<div className="carousel">
-				<Button
-					variant="text"
-					color="light"
-					className="horizontalSlider"
-					disabled={display <= 0}
-					onClick={() => setDisplay(display - 1)}
-				>
-					<NavigateBeforeIcon style={{ fontSize: "40px" }} />
-				</Button>
-
-				<Button
-					variant="text"
-					color="light"
-					className="verticalSlider"
-					disabled={display <= 0}
-					onClick={() => setDisplay(display - 1)}
-				>
-					<KeyboardArrowUpIcon style={{ fontSize: "40px" }} />
-				</Button>
-
-				<Grid container spacing={1.5} sx={{ width: "85%" }}>
-					<PortfolioItem project={projects[display]} />
-					<PortfolioItem project={projects[display + 1]} />
-					<PortfolioItem project={projects[display + 2]} />
-				</Grid>
-
-				<Button
-					variant="text"
-					color="light"
-					className="horizontalSlider"
-					disabled={display >= projects.length - 3}
-					onClick={() => setDisplay(display + 1)}
-				>
-					<NavigateNextIcon style={{ fontSize: "40px" }} />
-				</Button>
-				<Button
-					variant="text"
-					color="light"
-					className="verticalSlider"
-					disabled={display >= projects.length - 3}
-					onClick={() => setDisplay(display + 1)}
-				>
-					<KeyboardArrowDownIcon style={{ fontSize: "40px" }} />
-				</Button>
-			</div>
-			{/* 			<Grid container spacing={2}>
+			<Carousel
+				swipeable={true}
+				draggable={false}
+				showDots={false}
+				responsive={responsive}
+				infinite={true}
+				autoPlay={true}
+				autoPlaySpeed={3000}
+				keyBoardControl={true}
+				customTransition="transform 500ms ease-in-out"
+				transitionDuration={500}
+				containerClass="carousel-container"
+				removeArrowOnDeviceType={[]}
+				itemClass="carousel-item"
+				renderDotsOutside={false}
+				centerMode={false}
+			>
 				{projects.map((project) => (
 					<PortfolioItem key={project.name} project={project} />
 				))}
-			</Grid>
- */}{" "}
+			</Carousel>
 		</section>
 	);
 };
