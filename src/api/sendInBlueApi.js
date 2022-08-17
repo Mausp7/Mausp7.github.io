@@ -1,7 +1,6 @@
 import axios from 'axios';
 
 const sendEmail = async (email) => {
-    
     try {
         const response = await axios.post(
 			`https://api.sendinblue.com/v3/smtp/email`, {
@@ -27,7 +26,7 @@ const sendEmail = async (email) => {
                 `
             }, {
                 headers: {
-                "Content-Type": "application/json",
+                    "Content-Type": "application/json",
                     "Accept": "application/json",
                     "api-key": process.env.REACT_APP_SENDBLUE_API_KEY
                 }
