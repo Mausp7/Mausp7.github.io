@@ -1,17 +1,14 @@
 import { useState } from "react";
 import sendEmail from "../api/sendInBlueApi";
+import Toast from "../components/Toast";
 
-import { Button } from "@mui/material";
-import IconButton from "@mui/material/IconButton";
+import { Button, TextField } from "@mui/material";
 import LoadingButton from "@mui/lab/LoadingButton";
-import { TextField } from "@mui/material";
-import Snackbar from "@mui/material/Snackbar";
 
 import EmailIcon from "@mui/icons-material/Email";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import SendIcon from "@mui/icons-material/Send";
-import CloseIcon from "@mui/icons-material/Close";
 
 import "./Contact.scss";
 
@@ -22,16 +19,12 @@ const Contact = () => {
 	const [text, setText] = useState("");
 
 	const [sending, setSending] = useState(false);
-	const [snackbar, setSnackbar] = useState(false);
+	const [toast, setToast] = useState(false);
 
 	const isEmail = (input) => {
 		return /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(
 			input
 		);
-	};
-
-	const closeSnackbar = () => {
-		setSnackbar(false);
 	};
 
 	const handleSubmit = async (event) => {
@@ -44,8 +37,8 @@ const Contact = () => {
 		setEmail("");
 		setEmail2("");
 		setText("");
-		setSnackbar(true);
 		setSending(false);
+		setToast(true);
 	};
 
 	return (
@@ -55,7 +48,8 @@ const Contact = () => {
 					Let's talk about our next adventure together over a coffee or tea!
 				</h2>
 				<p>
-					You can leave a quick message or find me on the following platforms:
+					You can find me on the following platforms or leave a quick message
+					below.
 				</p>
 				<div className="contact-container">
 					<form>
@@ -136,8 +130,8 @@ const Contact = () => {
 					<div className="contact-btn-container">
 						<a href="mailto:aron.tombacz@yahoo.com">
 							<Button
-								variant="outlined"
-								color="light"
+								variant="contained"
+								color="primary"
 								size="large"
 								fullWidth
 								startIcon={<EmailIcon />}
@@ -147,8 +141,8 @@ const Contact = () => {
 						</a>
 
 						<Button
-							variant="outlined"
-							color="light"
+							variant="contained"
+							color="primary"
 							size="large"
 							startIcon={<LinkedInIcon />}
 							onClick={() =>
@@ -162,8 +156,8 @@ const Contact = () => {
 						</Button>
 
 						<Button
-							variant="outlined"
-							color="light"
+							variant="contained"
+							color="primary"
 							size="large"
 							startIcon={<GitHubIcon />}
 							onClick={() => window.open("https://github.com/Mausp7", "_blank")}
@@ -172,23 +166,11 @@ const Contact = () => {
 						</Button>
 					</div>
 				</div>
-				<Snackbar
-					open={snackbar}
-					autoHideDuration={6000}
-					onClose={closeSnackbar}
-					message="Thank you for your message. I will get in touch shortly."
-					action={
-						<IconButton
-							size="small"
-							aria-label="close"
-							color="inherit"
-							onClick={closeSnackbar}
-						>
-							<CloseIcon fontSize="small" />
-						</IconButton>
-					}
-					anchorOrigin={{ vertical: "top", horizontal: "center" }}
-				></Snackbar>
+				<Toast
+					open={toast}
+					onClose={() => setToast(false)}
+					message={"Thank you for your message. We'll get in touch shortly."}
+				/>
 			</main>
 		</>
 	);
