@@ -1,7 +1,5 @@
 import axios from 'axios';
 
-const YOUR_API_KEY = "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";
-
 const sendEmail = async (email) => {
     
     try {
@@ -31,7 +29,7 @@ const sendEmail = async (email) => {
                 headers: {
                 "Content-Type": "application/json",
                     "Accept": "application/json",
-                    "api-key": YOUR_API_KEY
+                    "api-key": process.env.REACT_APP_SENDBLUE_API_KEY
                 }
 			}
 		);

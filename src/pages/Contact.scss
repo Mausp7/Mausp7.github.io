@@ -6,7 +6,6 @@
     justify-content: center;
     align-items: center;
     min-height: calc(100vh - 110px);
-    //min-height: 480px;
 
     padding: 100px 0 80px;
 
@@ -40,7 +39,6 @@
             
             font-size: 1.2em;
         }
-
     }
 
     div.contact-container {
@@ -60,8 +58,6 @@
         @media screen and (max-width: 650px) {
             padding: 0 25px;
         }
-
-
 
         form {
             display: flex;
@@ -89,14 +85,11 @@
 
             padding: 0px 0px;
 
-
             @media screen and (max-width: 800px) {
                 width: 200px;
 
                 margin-top: 50px;
             }
         }
-
-
     }
 }
