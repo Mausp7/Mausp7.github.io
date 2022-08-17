@@ -33,7 +33,7 @@ const Portfolio = (props) => {
 				showDots={false}
 				responsive={responsive}
 				infinite={true}
-				autoPlay={true}
+				autoPlay={false}
 				autoPlaySpeed={3000}
 				keyBoardControl={true}
 				customTransition="transform 500ms ease-in-out"

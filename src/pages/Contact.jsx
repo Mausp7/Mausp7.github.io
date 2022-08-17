@@ -128,18 +128,6 @@ const Contact = () => {
 						</LoadingButton>
 					</form>
 					<div className="contact-btn-container">
-						<a href="mailto:aron.tombacz@yahoo.com">
-							<Button
-								variant="contained"
-								color="primary"
-								size="large"
-								fullWidth
-								startIcon={<EmailIcon />}
-							>
-								E-mail
-							</Button>
-						</a>
-
 						<Button
 							variant="contained"
 							color="primary"
@@ -164,6 +152,18 @@ const Contact = () => {
 						>
 							GitHub
 						</Button>
+
+						<a href="mailto:aron.tombacz@yahoo.com">
+							<Button
+								variant="contained"
+								color="primary"
+								size="large"
+								fullWidth
+								startIcon={<EmailIcon />}
+							>
+								E-mail
+							</Button>
+						</a>
 					</div>
 				</div>
 				<Toast

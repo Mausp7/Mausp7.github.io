@@ -1,5 +1,6 @@
 import { useState } from "react";
 
+import Bar from "./Bar";
 import Box from "@mui/material/Box";
 import Stack from "@mui/material/Stack";
 import Slider from "@mui/material/Slider";
@@ -25,14 +26,7 @@ const Skills = () => {
 						onClick={() => setSkill(skills.html)}
 					>
 						<TiHtml5 />
-						<Slider
-							color="light"
-							value={5}
-							valueLabelDisplay="auto"
-							step={1}
-							min={0}
-							max={5}
-						/>
+						<Bar percentage={90} />
 					</Stack>
 					<Stack
 						spacing={2}
@@ -42,14 +36,7 @@ const Skills = () => {
 						onClick={() => setSkill(skills.sass)}
 					>
 						<FaSass />
-						<Slider
-							color="light"
-							value={4}
-							valueLabelDisplay="auto"
-							step={1}
-							min={0}
-							max={5}
-						/>
+						<Bar percentage={80} />
 					</Stack>
 					<Stack
 						spacing={2}
@@ -59,14 +46,7 @@ const Skills = () => {
 						onClick={() => setSkill(skills.react)}
 					>
 						<FaReact />
-						<Slider
-							color="light"
-							value={3}
-							valueLabelDisplay="auto"
-							step={1}
-							min={0}
-							max={5}
-						/>
+						<Bar percentage={85} />
 					</Stack>
 					<Stack
 						spacing={2}
@@ -76,14 +56,7 @@ const Skills = () => {
 						onClick={() => setSkill(skills.node)}
 					>
 						<FaNodeJs />
-						<Slider
-							color="light"
-							value={3}
-							valueLabelDisplay="auto"
-							step={1}
-							min={0}
-							max={5}
-						/>
+						<Bar percentage={70} />
 					</Stack>
 					<Stack
 						spacing={2}
@@ -93,14 +66,7 @@ const Skills = () => {
 						onClick={() => setSkill(skills.mongo)}
 					>
 						<SiMongodb />
-						<Slider
-							color="light"
-							value={2}
-							valueLabelDisplay="auto"
-							step={1}
-							min={0}
-							max={5}
-						/>
+						<Bar percentage={50} />
 					</Stack>
 					<Stack
 						spacing={2}
@@ -110,14 +76,7 @@ const Skills = () => {
 						onClick={() => setSkill(skills.docker)}
 					>
 						<FaDocker />
-						<Slider
-							color="light"
-							value={1}
-							valueLabelDisplay="auto"
-							step={1}
-							min={0}
-							max={5}
-						/>
+						<Bar percentage={40} />
 					</Stack>
 				</Box>
 				<div className="details">
