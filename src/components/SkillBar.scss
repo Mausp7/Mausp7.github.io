@@ -1,0 +1,33 @@
+@use '../util/colors.scss';
+
+.skill-bar {
+    margin-bottom: 12px;
+
+    cursor: pointer;
+
+    svg {
+        width: 60px;
+        height: auto;
+        
+        color: colors.$light;
+
+        transition: scale 100ms ease-in-out, color 200ms linear, filter 200ms linear;
+    }
+
+    div.bar {
+        transition: background-color 200ms linear;
+    }
+
+    &:hover {
+    
+        svg {
+            color: colors.$primary;
+            filter: drop-shadow( 1px 1px 3px colors.$light);
+
+            transform: scale(1.2);
+        }
+        div.bar {
+            background-color: colors.$primary;
+        }
+    }
+}

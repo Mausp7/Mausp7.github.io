@@ -33,21 +33,6 @@
         width: 100%;
 
         padding: 30px 0;
-    
-        svg {
-            width: 60px;
-            height: auto;
-            
-            color: colors.$light;
-
-            cursor: pointer;
-            transition: transform 150ms ease-in-out, color 150ms ease-in-out;
-
-            &:hover {
-                color: colors.$primary;
-                transform: scale(1.1);
-            }
-        }
 
         .details {
             display: flex;

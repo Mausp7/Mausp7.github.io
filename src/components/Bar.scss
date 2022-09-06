@@ -10,17 +10,12 @@
     border-radius: 5px;
     box-shadow: 3px 3px 10px #0008;
 
-    cursor: pointer;
-    transition: transform 150ms ease-in-out;
-
     div.bar {
         height: 100%;
 
         border-radius: 5px;
         background-color: colors.$secondary;
         box-shadow: 1px 0px 1px colors.$secondary-t;
-
-        transition: background-color 150ms linear;
 
         span {
             position: absolute;
@@ -33,13 +28,4 @@
             transform: translatey(-50%);
         }
     }
-
-    &:hover {
-        transform: scale(1.05);
-
-        div.bar {
-            background-color: colors.$primary;
-        }
-    }
-
 }

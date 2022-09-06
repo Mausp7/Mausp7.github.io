@@ -48,8 +48,7 @@ const Contact = () => {
 					Let's talk about our next adventure together over a coffee or tea!
 				</h2>
 				<p>
-					You can find me on the following platforms or leave a quick message
-					below.
+					You can leave a message or find me on the following platforms below.
 				</p>
 				<div className="contact-container">
 					<form>
@@ -130,7 +129,7 @@ const Contact = () => {
 					<div className="contact-btn-container">
 						<Button
 							variant="contained"
-							color="primary"
+							color="secondary"
 							size="large"
 							startIcon={<LinkedInIcon />}
 							onClick={() =>
@@ -145,7 +144,7 @@ const Contact = () => {
 
 						<Button
 							variant="contained"
-							color="primary"
+							color="secondary"
 							size="large"
 							startIcon={<GitHubIcon />}
 							onClick={() => window.open("https://github.com/Mausp7", "_blank")}
@@ -156,7 +155,7 @@ const Contact = () => {
 						<a href="mailto:aron.tombacz@yahoo.com">
 							<Button
 								variant="contained"
-								color="primary"
+								color="secondary"
 								size="large"
 								fullWidth
 								startIcon={<EmailIcon />}
