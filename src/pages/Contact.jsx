@@ -51,7 +51,7 @@ const Contact = () => {
 					You can leave a message or find me on the following platforms below.
 				</p>
 				<div className="contact-container">
-					<form>
+					{/*<form>
 						<TextField
 							variant="outlined"
 							color="secondary"
@@ -125,8 +125,21 @@ const Contact = () => {
 						>
 							Send
 						</LoadingButton>
-					</form>
+					</form> */}
 					<div className="contact-btn-container">
+						
+					<a href="mailto:aron.tombacz@yahoo.com">
+							<Button
+								variant="contained"
+								color="secondary"
+								size="large"
+								fullWidth
+								startIcon={<EmailIcon />}
+							>
+								E-mail
+							</Button>
+						</a>
+						
 						<Button
 							variant="contained"
 							color="secondary"
@@ -151,18 +164,6 @@ const Contact = () => {
 						>
 							GitHub
 						</Button>
-
-						<a href="mailto:aron.tombacz@yahoo.com">
-							<Button
-								variant="contained"
-								color="secondary"
-								size="large"
-								fullWidth
-								startIcon={<EmailIcon />}
-							>
-								E-mail
-							</Button>
-						</a>
 					</div>
 				</div>
 				<Toast
